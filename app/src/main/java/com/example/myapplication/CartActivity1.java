@@ -1,10 +1,8 @@
 package com.example.myapplication;
-
 import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CartActivity1 extends AppCompatActivity {
@@ -63,6 +61,7 @@ public class CartActivity1 extends AppCompatActivity {
 
         if (cursor != null) cursor.close();
     }
+
 
     @Override
     protected void onResume() {

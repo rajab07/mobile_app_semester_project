@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -29,7 +30,7 @@
         <!-- Product Detail Activity -->
         <activity android:name=".DetailActivity" />
         <!--Cart activity-->
-        <activity android:name=".CartActivity" />
+        <activity android:name=".CartActivity1" />
         <!-- Profile Activity -->
         <activity android:name=".ProfileActivity1" />
 

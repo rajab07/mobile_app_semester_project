@@ -69,8 +69,11 @@ public class HomeActivity extends AppCompatActivity {
 
         btnCart.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, CartActivity1.class);
+            intent.putExtra("userEmail", userEmail); // REQUIRED
+            intent.putExtra("userName", userName);   // optional
             startActivity(intent);
         });
+
 
         btnProfile.setOnClickListener(v -> {
             // Open right drawer
@@ -116,6 +119,8 @@ public class HomeActivity extends AppCompatActivity {
         intent.putExtra("name", name);
         intent.putExtra("image", imageRes);
         intent.putExtra("price", price);
+        intent.putExtra("userEmail", userEmail); // pass user email
         startActivity(intent);
     }
+
 }

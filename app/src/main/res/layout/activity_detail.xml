@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:scaleType="centerCrop"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:src="@mipmap/ic_launcher"/>
 
     <TextView
         android:id="@+id/tvName"
@@ -41,6 +42,27 @@
         android:id="@+id/btnBuyNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buy Now"/>
+        android:text="Buy Now"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- New TextView for website info -->
+    <TextView
+        android:id="@+id/tvWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Here Fore Detailed Shopping on DARAZ "
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- WebView to show website -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
 
 </LinearLayout>
